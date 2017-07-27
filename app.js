@@ -1,7 +1,7 @@
 var numberOfFaces = 5;
 var theLeftSide = document.getElementById("leftSide");
 var theRightSide = document.getElementById("rightSide");
-var theBody = document.querySelector("body");
+var message = document.getElementById("message");
 
 
 function generateFaces() {
@@ -23,21 +23,23 @@ function generateFaces() {
         imgSmile.style.height = 100 + "px";
         imgSmile.style.width = 100 + "px";
         theLeftSide.appendChild(imgSmile);
-        leftSideImages = theLeftSide.cloneNode(true);
-        leftSideImages.removeChild(leftSideImages.lastChild);
-        theRightSide.appendChild(leftSideImages);
     }
+
+    leftSideImages = theLeftSide.cloneNode(true);
+    leftSideImages.removeChild(leftSideImages.lastChild);
+    theRightSide.appendChild(leftSideImages);
 
     theLeftSide.lastChild.onclick = function nextLevel(event) {
         event.stopPropagation();
-        numberOfFaces += 5;
+        numberOfFaces += 2;
         generateFaces();         
     }
 }
 
-theBody.onclick = function gameOver() {
-    alert("Game Over!");
-    theBody.onclick = null;
+
+theLeftSide.onclick = function gameOver() {
+    message.style.visibility = "visible";
+    theLeftSide.onclick = null;
     theLeftSide.lastChild.onclick = null;
 }
 
