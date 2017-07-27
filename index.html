@@ -3,14 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="William Andaya">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Matching Game</title>   
   </head>
   <body>
-    <h1>Matching Game</h1>
-    <p>Click on the extra smiling face on the left.</p>
-    <div id = "leftSide"></div>
-    <div id = "rightSide"></div>
+    <header>
+      <div>
+        <h1>Matching Game</h1>
+        <p>Click on the extra smiling face on the left.</p>
+      </div>
+    </header>
+    <section>
+      <div id="container">
+        <div id = "leftSide"></div>
+        <div id = "rightSide"></div>
+      </div>
+    </section>
+    <section>
+      <div id="message">
+        <h1>Game Over!</h1>
+        <a href="#" onclick="location.reload();"><h4>Reset</h4></a>
+      </div>
+    </section>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
