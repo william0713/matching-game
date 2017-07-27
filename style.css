@@ -1,14 +1,95 @@
-img {
-  position: absolute;
-  }
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
 
-div {
-  position: absolute;
-  width: 500px;
-  height: 500px;
+body {
+	background-color: #63c4d8;
+}
+
+img {
+  	position: absolute;
+}
+
+#container div {
+	position: relative;
+  	width: 500px;
+  	height: 500px;
 }
 
 #rightSide {
-  left: 500px;
-  border-left: 1px solid black;
+	position: relative;
+  	border-left: 3px solid #fff7c0;
+}
+
+header div{
+	width: 360px;
+	height: 120px;
+	margin: 35px auto;
+	text-align: center;
+	background-color: #66ab8c;
+	-webkit-box-shadow: 0px 5px 10px 0px #163323;
+    -moz-box-shadow: 0px 5px 10px 0px #163323;
+    box-shadow: 0px 1px 30px 0px #163323;
+}
+
+header h1 {
+	padding-top: 15px;
+	margin: 0;
+	font-size: 50px;
+}
+
+header h1, p {
+	color: #fff7c0;
+}
+
+div#container {
+	display: flex;
+	width: 1000px;
+	height: 500px;
+	margin: 35px auto;
+	background-color: #fa7c92;
+	box-shadow: 0px 0px 20px 5px #888888
+}
+
+#message {
+	visibility: hidden;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 100px;
+	width: 200px;
+	text-align: center;
+	vertical-align: text-top;
+	background-color: #63c4d8;
+	-webkit-box-shadow: 0px 5px 10px 0px #12292d;
+    -moz-box-shadow: 0px 5px 10px 0px #12292d;
+    box-shadow: 0px 1px 30px 0px #12292d; 
+}
+
+#message h1, h4 {
+	margin-top: 15px;	
+	color: #fff7c0;
+	text-shadow: 0px 0px 2px #272308;
+}
+
+#message a {
+	text-decoration: none;
+}
+
+#message a:hover p{
+	background-color: #999;
+	color: white;
+}
+
+#message h4{
+	width: 50px;
+	text-decoration: none;
+	border: 1.5px solid #999;
+	text-align: center;
+	margin: 0 auto;
 }
